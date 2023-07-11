@@ -23,7 +23,7 @@
 
 <body>
   <div>
-    <label for="numbers">Enter two numebrs separated by a space</label>
+    <label for="numbers">Enter three numebrs separated by a space</label>
     <input type="text" id="numbers">
     <button onclick="NumberChekerr()">Submit</button>
   </div>
@@ -32,12 +32,13 @@
   </div>
 </body>
 <script defer>
-  function largerNubmer(n, k) {
-    return n > k ? n : k
+  function smallerNubmer(n, k , l) {
+    return n < k ? n < l ? n : l : k < l ? k : l
   }
   function NumberChekerr() {
     let strings = document.querySelector('#numbers').value.split(' ').map(Number)
-    document.querySelector('.result').textContent = largerNubmer(strings[0], strings[1])
+    console.log(strings)
+    document.querySelector('.result').textContent = smallerNubmer(strings[0], strings[1] , strings[2])
   }
 </script>
 
