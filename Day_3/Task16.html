@@ -24,7 +24,7 @@
 <body>
   <div>
     <label for="number">Enter a numebr</label>
-    <input type="text" id="number">
+    <input type="text" id="number" placeholder="bruh">
     <button onclick="NumberChekerr()">Submit</button>
   </div>
   <div>
@@ -35,7 +35,7 @@
   function isOdd(n) {
     return n % 2 != 0 
   }
-  
+
   function NumberChekerr() {
     let n = Number(document.querySelector('#number').value)
     document.querySelector('.result').textContent = isOdd(n)

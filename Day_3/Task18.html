@@ -20,26 +20,24 @@
     font-size: 14px;
   }
 </style>
-<!-- Silencieux Amoureux -->
+<!--Dead and cold -->
 <body>
   <div>
-    <label for="number">Enter a numebr</label>
-    <input type="text" id="number" placeholder="bruh">
-    <button onclick="NumberChekerr()">Submit</button>
+    <label for="strings">Enter two strings separated by a space</label>
+    <input type="text" id="strings">
+    <button onclick="stringsChekcer()">Submit</button>
   </div>
   <div>
     <p class="result"></p>
   </div>
 </body>
 <script defer>
-  function positive(n) {
-    //i love this!
-    return n > 0 ? n : -n;
+  function fullName(str1, str2) {
+    return `${str1} ${str2}`;
   }
-
-  function NumberChekerr() {
-    let n = Number(document.querySelector('#number').value)
-    document.querySelector('.result').textContent = positive(n)
+  function stringsChekcer() {
+    let strings = document.querySelector('#strings').value.split(' ')
+    document.querySelector('.result').textContent = fullName(strings[0], strings[1])
   }
 </script>
 
