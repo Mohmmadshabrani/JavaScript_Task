@@ -1,0 +1,158 @@
+:root {
+  --border-clour: #eeeeee;
+  --prime-color: #00adb5;
+  --dark-color: #393e46;
+  --prime-dark: #222831;
+}
+
+/* the body general style */
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* golbel selectors */
+a{text-decoration: none;}
+input{display: none;}
+
+
+/* a contaier for the page */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1rem;
+  border-radius: 25px 25px 0 0;
+  overflow-x: hidden;
+}
+
+& ::-webkit-scrollbar {
+  display: none
+}
+
+/* The starting of navbar style */
+nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 0 1rem #b5b4b4;
+  transition: all 0.3s ease;
+}
+nav:hover {
+  box-shadow: 0 0 1rem #e5e2e2;
+
+}
+nav .page {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+}
+nav .selected {
+  background-color: #222831;
+}
+nav .selected a {
+  color: #fdfdfd !important;
+}
+nav .selected::before {
+  content: "";
+  height: 0.2rem;
+  width: 4rem;
+  position: absolute;
+  top: 2.4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 5rem;
+  background-color: var(--prime-color);
+  transition: all 0.2s ease;
+}
+nav .page .textTag {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 700;
+  color: var(--dark-color);
+  transition: all 0.2s ease;
+}
+nav .page .textTag:hover {
+  transform: translateY(20%);
+}
+nav .selected.page.js:hover::before {
+  opacity: 0%;
+}
+/* end of navbar style code */
+
+/* starting of tasks div */
+
+.taskContainer{
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.taskContainer label{
+  display: flex;
+  padding:.8rem;
+  justify-content: space-between;
+  background-color: #00acb538;
+  align-items: center !important;
+  cursor: pointer;
+}
+.taskContainer label .icon{
+  font-size: large;
+}
+.taskContainer .tasks{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all .5s ease;
+}
+.taskContainer .tasks .task{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 0;
+  width: max(8rem , 15vw);
+  border-radius: 15px;
+  color: #fff;
+  background-color: #393e46;
+  box-shadow: 0 0 1rem #797878;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.taskContainer .tasks.active{
+  padding: 1rem 0;
+  height: auto;
+  visibility: visible;
+  transition: all .5s ease;
+}
+
+.taskContainer .tasks.active .task {
+  height: 20vw;
+  transition: height .5s, box-shadow .3s ,transform .3s;
+  transition: all .5s ease;
+}
+
+.taskContainer .tasks .task:hover{
+  box-shadow: none;
+  transform: translateY(5%);
+}
+.taskContainer .tasks .task .name{
+  font-size: clamp(3vmin, 36px, 3vmin);
+}

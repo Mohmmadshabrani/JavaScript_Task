@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 5rem;
+        }
+        </style>
+</head>
+<body>
+    <p class="result">0</p>
+</body>
+<script src="script.js" >
+    
+    let operetor = prompt("enter opereation")
+    let num1 = Number(prompt('enter numebr 1'))
+    let num2 = Number(prompt('enter numebr 2'))
+    let result = 0;
+
+    switch(operetor){
+        case '+':
+            result = num1+num1
+            break
+        case '-':
+            result = num1-num1
+            break
+        case '/':
+            result = num1/num1
+            break
+        case '*':
+            result = num1*num1
+            break
+    }
+    console.log(result)
+    document.querySelector('.result').innerHTML = `${num1} ${operetor} ${num2} = ${result}`
+
+</script>
+</html>
