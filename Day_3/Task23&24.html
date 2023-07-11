@@ -29,6 +29,7 @@
   <div>
     <p class="result"></p>
   </div>
+  <div><button onclick="resetCounter()">Rest counter </button></div>
 </body>
 <script defer>
   //now this was intresting 
@@ -44,6 +45,11 @@
       isActive = true
     }
     document.querySelector('.result').textContent = iter.next().value
+  }
+  function resetCounter(){
+    document.querySelector('.result').textContent = `${iter.next().value - 2} and the counter reset now`
+    iter = counter();
+
   }
 </script>
 
