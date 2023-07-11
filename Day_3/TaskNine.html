@@ -32,15 +32,16 @@
   </div>
 </body>
 <script defer>
-  function canIGetADrivingLicense(age){
-    if(age >= 20)
+  function canIGetADrivingLicense(age) {
+    if (age >= 20)
       return `yes you can`;
     else
       return `please come back after ${20 - age} years to get one`
   }
-  function canIGetADrivingLicenseLancher(){
+  function canIGetADrivingLicenseLancher() {
     let n = Number(document.querySelector("#age").value)
     document.querySelector('.result').textContent = canIGetADrivingLicense(n)
   }
 </script>
+
 </html>

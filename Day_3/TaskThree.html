@@ -36,17 +36,17 @@
   </div>
 </body>
 <script defer>
-function calculateSupply(age,amountPerDay){
-  return (100 - age) * 365 * amountPerDay;
-}
- function calculateSupplyfunc(){
-  let age = document.querySelector('#age').value;
-  let APDO = document.querySelector("#amountPerDay").value.split(' ');
-  let APD = APDO.shift();
-  APD = calculateSupply(age, APD);
-  let result = `You will need ${APD} ${APDO.join(' ')} to last you until the ripe old age of 100`;
-  document.querySelector(".result").textContent = result;
- }
+  function calculateSupply(age, amountPerDay) {
+    return (100 - age) * 365 * amountPerDay;
+  }
+  function calculateSupplyfunc() {
+    let age = document.querySelector('#age').value;
+    let APDO = document.querySelector("#amountPerDay").value.split(' ');
+    let APD = APDO.shift();
+    APD = calculateSupply(age, APD);
+    let result = `You will need ${APD} ${APDO.join(' ')} to last you until the ripe old age of 100`;
+    document.querySelector(".result").textContent = result;
+  }
 </script>
 
 </html>

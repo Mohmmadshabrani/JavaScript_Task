@@ -32,25 +32,13 @@
   </div>
 </body>
 <script defer>
-  function sameLength(str1 , str2){
+  function sameLength(str1, str2) {
     return str1.length === str2.length;
   }
-  function stringsChekcer(){
+  function stringsChekcer() {
     let strings = document.querySelector('#strings').value.split(' ')
-    document.querySelector('.result').textContent = sameLength(strings[0] , strings[1])
+    document.querySelector('.result').textContent = sameLength(strings[0], strings[1])
   }
 </script>
+
 </html>
-
-<!-- 10
-Write a function called sameLength
-that accepts two strings as arguments,
-and returns true if those strings have the same length, and false otherwise.
-
-**hint: how we can know string length   Ex: : "tree".length   => 4
-
-Ex: sameLength("tree","clue")
-=> true
-
-Ex: sameLength("tree","car")
-=> false -->
