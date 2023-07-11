@@ -23,22 +23,24 @@
 
 <body>
   <div>
-    <label for="number">Enter a number to cube</label>
-    <input type="text" id="number">
-    <button onclick="cuber()">Submit</button>
+    <label for="age">Enter Your age </label>
+    <input type="text" id="age">
+    <button onclick="canIGetADrivingLicenseLancher()">Submit</button>
   </div>
   <div>
     <p class="result"></p>
   </div>
 </body>
 <script defer>
-  function cube(n) {
-    return n * n * n;
+  function canIGetADrivingLicense(age){
+    if(age >= 20)
+      return `yes you can`;
+    else
+      return `please come back after ${20 - age} years to get one`
   }
-  function cuber() {
-    let n = Number(document.querySelector("#number").value)
-    document.querySelector('.result').textContent = cube(n)
+  function canIGetADrivingLicenseLancher(){
+    let n = Number(document.querySelector("#age").value)
+    document.querySelector('.result').textContent = canIGetADrivingLicense(n)
   }
 </script>
-
 </html>
