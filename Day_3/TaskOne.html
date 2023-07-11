@@ -15,7 +15,8 @@
     font-family: "Ubuntu", sans-serif;
     font-size: 4rem;
   }
-  label{
+
+  label {
     font-size: 14px;
   }
 </style>
@@ -44,7 +45,7 @@
   </div>
 </body>
 <script defer>
-  function fortuneTeller(childrenNumber = 0, PartnerName = 'unknown', geoLoction ='unknown', job = 'unknown') {
+  function fortuneTeller(childrenNumber = 0, PartnerName = 'unknown', geoLoction = 'unknown', job = 'unknown') {
     let result = `You will be a ${job} in ${geoLoction}, and married to ${PartnerName} with ${childrenNumber} kids`;
     console.log(result);
     document.querySelector('.result').textContent = result
