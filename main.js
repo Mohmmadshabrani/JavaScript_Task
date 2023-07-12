@@ -12,21 +12,3 @@ for (let i = 0; i < labels.length; i++) {
       icons[i].textContent = '▼';
   });
 }
-
-
-
-let a = function (){
-  console.log('diid,')
-}
-
-a()
-
-
-
-let person = {
-  name:'name',
-  func: function (){
-    console.log(this.name)
-  }
-
-}

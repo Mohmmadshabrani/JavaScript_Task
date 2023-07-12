@@ -133,6 +133,7 @@ nav .selected.page.js:hover::before {
   background-color: #393e46;
   box-shadow: 0 0 1rem #797878;
   overflow: hidden;
+  margin-top: 1.5rem;
   transition: all .5s ease;
 }
 
@@ -155,4 +156,7 @@ nav .selected.page.js:hover::before {
 }
 .taskContainer .tasks .task .name{
   font-size: clamp(3vmin, 36px, 3vmin);
+}
+.interesting {
+  background-color: #161a1f !important;
 }
