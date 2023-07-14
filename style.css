@@ -157,6 +157,3 @@ nav .selected.page.js:hover::before {
 .taskContainer .tasks .task .name{
   font-size: clamp(3vmin, 36px, 3vmin);
 }
-.interesting {
-  background-color: #161a1f !important;
-}
