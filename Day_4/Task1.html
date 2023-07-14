@@ -56,10 +56,7 @@
   </section>
 </body>
 <script defer>
-  let checkboxs = document.querySelectorAll('input');
-  let fontSize = document.querySelector('#fontSize');
-  let fontFamliy = document.querySelector('#fontFamliy');
-  let textDiv = document.querySelector('.textbox');
+  let checkboxs = document.querySelectorAll('input'), fontSize = document.querySelector('#fontSize') ,fontFamliy = document.querySelector('#fontFamliy'), textDiv = document.querySelector('.textbox');
 
   fontSize.addEventListener('change', e => changeHandler['fontSize'](e));
   fontFamliy.addEventListener('change', e => changeHandler['fontFamliy'](e));
