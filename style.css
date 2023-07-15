@@ -157,3 +157,9 @@ nav .selected.page.js:hover::before {
 .taskContainer .tasks .task .name{
   font-size: clamp(3vmin, 36px, 3vmin);
 }
+
+.geadent{
+  background: rgb(0,173,181);
+  background: radial-gradient(circle, rgba(0,173,181,1) 50%, rgba(79,91,110,1) 100%);
+  color: #fff ;
+}
