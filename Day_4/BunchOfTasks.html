@@ -14,7 +14,8 @@
       font-family: "Ubuntu", sans-serif;
       font-size: 1rem;
     }
-    h5{
+
+    h5 {
       text-align: center;
     }
   </style>
@@ -37,7 +38,7 @@
     </pre>
     <hr>
     <h3>Task no.2</h3>
-    
+
     <pre>
       What the index of "Banana","Tomato"
       var fruits=["Tomato","Banana","Watermelon"]
@@ -67,7 +68,7 @@
     <hr>
     <h3>Task no.6</h3>
     <h5>Script or console</h5>
- 
+
     <hr>
     <h3>Task no.7</h3>
     <pre>
@@ -79,53 +80,131 @@
     </pre>
 
     <hr>
-    <h3>Task no.6</h3>
+    <h3>Task no.8</h3>
     <h5>Script or console</h5>
- 
+
+    <hr>
+    <h3>Task no.9</h3>
+    <h5>Script or console</h5>
+
   </div>
 </body>
-  <script defer>
-    // task number 3
-      let Foods = ['Pizza' , 'Burgers' , 'Pancakes' , 'Pasta' , 'Fried Chicken']
-      let Sports = ['Football' , 'Basketball' , 'Swimming' , 'Tennis']
-      let Movies = ['The Godfather' , 'Inception' , 'Fight Club' , 'The Matrix']
-      // console.log('Foods:',Foods)
-      // console.log('Sports:',Sports)
-      // console.log('Movies:',Movies)
+<script defer>
+  'use strict'
+  // task number 3
+  let Foods = ['Pizza', 'Burgers', 'Pancakes', 'Pasta', 'Fried Chicken']
+  let Sports = ['Football', 'Basketball', 'Swimming', 'Tennis']
+  let Movies = ['The Godfather', 'Inception', 'Fight Club', 'The Matrix']
+  // console.log('Foods:',Foods)
+  // console.log('Sports:',Sports)
+  // console.log('Movies:',Movies)
 
-    //task number 4
-      function firstOfArray(ar){
-        return ar[0]
-      }
+  //task number 4
+  function firstOfArray(ar) {
+    return ar[0]
+  }
 
-    //task number 5
-      function lastOfArray(ar){
-        return ar[-1]
-      }
+  //task number 5
+  function lastOfArray(ar) {
+    return ar[-1]
+  }
 
-    //task number 6
-      let ar = [0,5,7,9]
-      ar.shift()
-      ar.shift()
-      ar.shift()
-      ar.push(10)
-      ar.unshift(8)
-      ar.unshift(6)
-      ar.unshift(4)
-      ar.unshift(3)
-      ar.unshift(1)
-      // console.log(ar)
+  //task number 6
+  let ar = [0, 5, 7, 9]
+  ar.shift()
+  ar.shift()
+  ar.shift()
+  ar.push(10)
+  ar.unshift(8)
+  ar.unshift(6)
+  ar.unshift(4)
+  ar.unshift(3)
+  ar.unshift(1)
+  // console.log(ar)
 
-    //task number 7
-      let arr = [5,9,-7,3.5]
-      // console.log(arr.unshift())
-      // console.log(arr.shift())
-      // console.log(arr.pop())
-      // console.log(arr.push())
+  //task number 7
+  let arr = [5, 9, -7, 3.5]
+  // console.log(arr.unshift())
+  // console.log(arr.shift())
+  // console.log(arr.pop())
+  // console.log(arr.push())
 
-      //task number 8
-        function middleOfArray(arr){
-          let mid = arr.length / 2
-        }
-  </script>
+  //task number 8
+  function middleOfArray(arr) {
+    let mid = arr.length / 2
+  }
+
+  //task number 9 
+  let animals = []
+  animals[0] = 'cat';
+  animals[1] = 'ele';
+  animals[2] = 'bird';
+  // console.log('first array',animals);
+  animals[0] = 'zebra';
+  animals[1] = 'elephant';
+  animals.splice(2, 1)
+  // console.log('second array',animals);
+  let nums = []
+  nums[0] = 1
+  nums[1] = 2
+  nums[2] = 3
+  nums[3] = 8
+  nums[4] = 9
+  // console.log('first array nums' , nums)
+  nums[0] = 5
+  nums[1] = -22
+  nums[2] = 3.5
+  nums[3] = 44
+  nums[4] = 98
+  nums[5] = 44
+  // console.log('second array nums' , nums)
+
+  //task numbre 10
+  function indexOfArray(ar, n) {
+    return ar[n];
+  }
+
+  //task number 11
+  function arrayExceptLast(ar) {
+    ar.splice(-1, 1)
+    return ar
+  }
+
+  //task number 12
+  function addToEnd(ar, newNum) {
+    ar.push(newNum)
+    return ar
+  }
+
+  //task number 13
+  function sumArrayForLoop(ar) {
+    let sum = 0
+    for (let i in ar)
+      sum += ar[i]
+    return sum
+  }
+  function sumArrayWhileLoop(ar) {
+    let sum = 0 ,index = 0;
+    while(index++ < ar.length -1){ 
+      sum += ar[index]
+    }
+    return sum 
+  }
+  function sumArrayFunction(ar){
+    return ar.reduce( (a,b) => a + b )
+  }
+  
+  //task number 14
+  function minInArrayFunction(ar){
+    return Math.min(...ar)
+  }
+  function minInArrayForLoop(ar){
+    let min = ar[0]
+    for(let i in ar)
+      if(ar[i] < min)
+        min = ar[i]
+    return min
+  }
+</script>
+
 </html>
