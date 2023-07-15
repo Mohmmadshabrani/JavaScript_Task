@@ -317,6 +317,42 @@
         count++;
     return count;
   }
+
+  //task number 20
+  function evenIndexOddLengthForLoop(ar){
+    let newAr = []
+    for(i in ar)
+      if(ar[i].length % 2 != 0 && i % 2 == 0)
+        newAr.push(str[i])
+    return newAr
+  } 
+  function evenIndexOddLengthWhileLoop(ar){
+    let newAr = []
+    let i = -1
+    while(++i < ar.length)
+      if(ar[i].length % 2 != 0 && i % 2 == 0)
+        newAr.push(str[i])
+    return newAr
+  }
+  function evenIndexOddLengthFunction(ar){
+    return arr.filter((str , i) => str.length % 2 != 0 && i % 2 == 0 && i != 0)
+  }
+
+  //task number 21
+  function powerElementIndexFunction(ar){
+    return ar.map((e , i) => e**i)
+  }
+  function powerElementIndexForLoop(ar){
+    for(let i in ar)
+      ar[i] = ar[i] ** i
+    return ar
+  }
+  function powerElementIndexWhileLoop(ar){
+    let i = -1
+    while (++i < ar.length)
+      ar[i] = ar[i] ** i
+    return ar 
+  }
 </script>
 
 </html>
