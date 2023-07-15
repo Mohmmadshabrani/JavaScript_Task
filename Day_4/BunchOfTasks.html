@@ -87,6 +87,58 @@
     <h3>Task no.9</h3>
     <h5>Script or console</h5>
 
+    <hr>
+    <h3>Task no.10</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.11</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.12</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.13</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.14</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.15</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.16</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.17</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.18</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.19</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.20</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.21</h3>
+    <h5>Script or console</h5>
+
+    <hr>
+    <h3>Task no.22</h3>
+    <h5>Script or console</h5>
+
   </div>
 </body>
 <script defer>
@@ -352,6 +404,26 @@
     while (++i < ar.length)
       ar[i] = ar[i] ** i
     return ar 
+  }
+
+  //task number 22
+  function evenNumberEvenIndexFunction(ar){
+    return ar.filter((e,i) => e % 2 == 0 && i % 2 == 0 && i != 0)
+  }
+  function evenNumberEvenIndexForLoop(ar){
+    let newAr = []
+    for(let i in ar)
+      if(ar[i] % 2 == 0 && i % 2 == 0 && i != 0)
+        newAr.push(ar[i])
+    return newAr
+  }
+  function evenNumberEvenIndexWhileLoop(ar){
+    let newAr = []
+    let i = -1
+    while(++i < ar.length)
+      if(ar[i] % 2 == 0 && i % 2 == 0 && i != 0)
+        newAr.push(ar[i])
+    return newAr
   }
 </script>
 
