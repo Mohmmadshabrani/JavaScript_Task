@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script defer>
+  //task 1
+  function doubleNumbers(ar){
+    return ar.map(e => e*2)
+  }
+
+  //task 2
+  function stringItUp(ar){
+    return ar.map(e => `${e}`)
+  }
+
+  //task 3
+  function capitalizeNames(ar){
+    return ar.map(e => `${e[0].toUpperCase()}${e.slice(1).toLowerCase()}`)
+  }
+
+  //task 4
+  function namesOnly(obj){
+    return obj.map(e => e.name )
+  }
+
+  //task 5 
+  function makeStrings(obj){
+    return obj.map(e => e.age > 18 ? `${e.name} can go to The Matrix` : `${e.name} is under age!!` )
+  }
+
+  //task 6 
+  function readyToPutInTheDOM(obj){
+    return obj.map(e => `<h1>${e.name}</h1><h2>${e.age}</h2>`)
+  }
+
+  //task 8
+  function valTimesIndex(a){
+    return a.map((e,i) => e * i)
+  }
+
+  //task 9
+  function extractKey(arr , key){
+    return arr.map(e => e.name)
+  }
+
+  //task 10
+  function extractFullName(arr){
+    return arr.map(e => `${e.first} ${e.last}`)
+  }
+
+</script>
+</html>
