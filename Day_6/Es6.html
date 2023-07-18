@@ -251,6 +251,60 @@
     return ar.filter(e => ar.filter(e2 => e2 == e).length <= 1 )
   }
 
+  //task 11
+  // Excersice 24: Write a JavaScript program to dcapitalize the first letter of a string. 
+  function decapitalize(...str){
+    return str.map(e => `${e[0].toLowerCase()}${e.slice(1)}`)
+  }
+
+  //task 12
+  // Excersice 25: Write a JavaScript program to create a new array out of the two supplied by creating each possible pair from the arrays. 
+  function arrayPairs(arr,arr1){
+    return arr.map(e => arr1.map(e1 => [e,e1])).flat()
+  }
+
+  //task 13
+  // Excersice 26: Write a JavaScript program that will return true if the string is y/yes or false if the string is n/no. 
+  function confirmation(str){
+    return str === 'y'||str ==='yes' ? true : str === 'n' || str ==='no' ? false : false
+  }
+
+  //task 14
+  // Excersice 33: Write a JavaScript program to get a random number in the specified range. 
+  function randomNumber(s , e){
+    return Math.random() * (e - s) + s
+  }
+
+  //task 15
+  // Excersice 34: Write a JavaScript program to get a random integer in the specified range. 
+  function randomNumberInt(s , e){
+    return Math.floor(Math.random() * (e - s) + s)
+  }
   
+  //task 16
+  // Excersice 35: Write a JavaScript program to get an array of given n random integers in the specified range. 
+  function randArray(n , min ,max){
+    return Array.from({length: n}, (v,i) => randomNumberInt(min , max))
+  }
+  
+  //task 17
+  // Excersice 32: Write a JavaScript program to get the sum of an given array, after mapping each element to a value using the provided function. 
+  function sum(arr , func){
+    return arr
+    .map(func)
+    .reduce((a,b) => a + b)
+  }
+
+  //task 18
+  // Excersice 40: Write a JavaScript program to create an array of key-value pair arrays from an given object. 
+  function ObjToArray(obj = {}){
+    let a = []
+    for(i in obj){
+      a.push([i,obj[i]])
+    }
+    return a
+  }
+
+
 </script>
 </html>
