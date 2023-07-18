@@ -12,3 +12,6 @@ for (let i = 0; i < labels.length; i++) {
       icons[i].textContent = '▼';
   });
 }
+
+
+
